@@ -3,6 +3,8 @@
 
 * A web app that displays movie posters, genres, and summaries. 
 
+* API used: https://yts.mx/api#list_movies
+
 ![demo](./images/demo.png)
 ![demo](./images/demo1.png)
 * NavBar 
