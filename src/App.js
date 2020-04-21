@@ -1,6 +1,7 @@
 import React from "react";
 import Axios from "axios";
 import Movie from "./Movie";
+import "./App.css"
 
 
 class App extends React.Component{
@@ -14,7 +15,7 @@ class App extends React.Component{
       data: {
         data: {movies}
       }
-    } = await Axios.get("https://yts.lt/api/v2/list_movies.json?sort_by=rating");
+    } = await Axios.get("https://yts.mx/api/v2/list_movies.json?sort_by=download_count");
     this.setState({ movies, isLoading: false });
   };
 
@@ -31,7 +32,7 @@ class App extends React.Component{
             <span className="loader__text">Loading...</span>
           </div> 
         ) : (
-          <div className="movies">
+          <div className="movies"> 
             {movies.map(movie =>(
               <Movie
                 key={movie.id}
