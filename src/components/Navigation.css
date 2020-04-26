@@ -1,23 +1,30 @@
-.logo {
-    width: 40px;
-    height: auto;
-    margin-top: 5px;
-}
-header {
+.nav {
     position: absolute;
-    font-weight: 400;
-}
-nav {
-    float: right;
 }
 
-nav ul {
+.nav img {
+    position: absolute;
+}
+
+.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #444;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #000;
+}
+
+.nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav li {
+.nav li {
     display: inline-block;
     margin-left: 70px;
     padding-top: 23px;
@@ -25,18 +32,7 @@ nav li {
     position: relative;
 }
 
-nav a {
-    color: #444;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-nav a:hover {
-    color: #000;
-}
-
-nav a::before {
+.nav a::before {
     content: '';
     display: block;
     height: 5px;
@@ -45,14 +41,20 @@ nav a::before {
     position: absolute;
     top: 0;
     width: 0%;
-
+    
     transition: all ease-in-out 300ms;
 }
 
-nav a:hover::before{
+.nav a:hover::before {
     width: 100%;
 }
 
-.sortby {
+.nav li:first-child {
     color: #444;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin-top: 5px;
 }
